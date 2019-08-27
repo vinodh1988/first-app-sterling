@@ -1,0 +1,11 @@
+<div [ngClass]="theme">
+ 
+    <h3>{{title}}</h3>
+    <hr>
+    <ul>
+        <li *ngFor="let n of values">{{n}}</li>
+    </ul>
+    Enter an Item::<input type="text" [(ngModel)]="item">
+    <button (click)="newItem()">ADD</button><br>
+    <button (click)="toggleTheme()">Toggle Theme</button>
+</div>
